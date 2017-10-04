@@ -10,7 +10,8 @@
     "start": "node test/e2e/e2e.server start || true",
     "e2e:build": "./node_modules/.bin/webdriver-manager update && tsc && node test/e2e/e2e.server.gen.js && node_modules/.bin/webpack --config test/e2e/webpack.config.js",
     "e2e:test": "./node_modules/.bin/protractor test/e2e/protractor.conf",
-    "e2e": "npm run e2e:build && npm run e2e:test || true"
+    "e2e": "npm run e2e:build && npm run e2e:test || true",
+    "tsc": "tsc"
   },
   "author": "Jeff Whelpley",
   "license": "MIT",

@@ -8,6 +8,7 @@
     "noEmitOnError": true,
     "noImplicitAny": true,
     "rootDir": ".",
+    "outDir": "./dist",
     "inlineSourceMap": true,
     "target": "es5",
     "lib": [
