@@ -18,7 +18,7 @@ var src_1 = require("../../../src");
 describe('UNIT TEST server-preboot.module', function () {
     describe('recordEvents()', function () {
         it('should render on server with JIT compiler', function (done) {
-            var AppComponent = (function () {
+            var AppComponent = /** @class */ (function () {
                 function AppComponent() {
                     this.title = 'app works!';
                 }
@@ -30,7 +30,7 @@ describe('UNIT TEST server-preboot.module', function () {
                 ], AppComponent);
                 return AppComponent;
             }());
-            var AppModule = (function () {
+            var AppModule = /** @class */ (function () {
                 function AppModule() {
                 }
                 AppModule = __decorate([
