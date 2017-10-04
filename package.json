@@ -5,7 +5,7 @@
   "scripts": {
     "inline": "node src/build/inline.preboot.builder",
     "rmrf": "rm -rf node_modules && rm -rf package-lock.json",
-    "build": "tsc && npm run inline || true",
+    "build": "rm -rf node_modules && npm i && ./node_modules/.bin/webdriver-manager update && tsc && npm run inline || true",
     "test": "./node_modules/.bin/jasmine JASMINE_CONFIG_PATH=test/utils/jasmine.json || true",
     "start": "node test/e2e/e2e.server start || true",
     "e2e:build": "./node_modules/.bin/webdriver-manager update && tsc && node test/e2e/e2e.server.gen.js && node_modules/.bin/webpack --config test/e2e/webpack.config.js",
@@ -40,7 +40,6 @@
     "protractor": "~5.1.2",
     "reflect-metadata": "^0.1.10",
     "rxjs": "^5.4.2",
-    "typescript": "^2.5.3",
     "uglify-js": "^3.0.26",
     "webdriver-manager": "^12.0.6",
     "webpack": "^3.3.0",
