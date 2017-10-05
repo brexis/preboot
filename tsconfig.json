@@ -24,6 +24,7 @@
     "record.ts",
     "replay.ts",
     "browser.ts",
-    "server.ts"
+    "server.ts",
+    "index.ts"
   ]
 }

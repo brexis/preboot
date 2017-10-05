@@ -20,6 +20,7 @@
     "PatrickJS <github@gdi2290.com>",
     "Jeff Whelpley <jeff@gethuman.com>"
   ],
+  "main": "./dist/index.js",
   "devDependencies": {
     "@angular/animations": "^4.3.1",
     "@angular/common": "^4.3.1",
