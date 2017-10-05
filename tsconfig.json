@@ -7,6 +7,7 @@
     "moduleResolution": "node",
     "noEmitOnError": true,
     "noImplicitAny": true,
+    "rootDir": ".",
     "outDir": "dist",
     "sourceMap": true,
     "target": "es5",
@@ -14,8 +15,15 @@
       "es6",
       "dom"
     ],
+    "baseUrl": ""
   },
-  "files": [
+  "include": [
+    "src",
+    "test",
+    "record.ts",
+    "replay.ts",
+    "browser.ts",
+    "server.ts",
     "index.ts"
   ],
   "angularCompilerOptions": {
