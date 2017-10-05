@@ -91,8 +91,8 @@ export function getInlinePrebootCode(customOptions?: PrebootRecordOptions): stri
 
   const optsStr = stringifyWithFunctions(opts);
   const eventRecorderFn = opts.minify ?
-    require('../../dist/preboot.min.js') :
-    require('../../dist/preboot.js');
+    require('../../preboot.min.js') :
+    require('../../preboot.js');
 
   // remove the function() {} wrapper so we have the bare functions
   const eventRecorderFnStr = eventRecorderFn.toString();

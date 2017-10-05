@@ -7,24 +7,18 @@
     "moduleResolution": "node",
     "noEmitOnError": true,
     "noImplicitAny": true,
-    "rootDir": ".",
-    "outDir": "./dist",
+    "outDir": "dist",
     "sourceMap": true,
-    "inlineSources": true,
     "target": "es5",
     "lib": [
       "es6",
       "dom"
     ],
-    "baseUrl": ""
   },
-  "include": [
-    "src",
-    "test",
-    "record.ts",
-    "replay.ts",
-    "browser.ts",
-    "server.ts",
+  "files": [
     "index.ts"
-  ]
+  ],
+  "angularCompilerOptions": {
+    "genDir": "aot"
+  }
 }

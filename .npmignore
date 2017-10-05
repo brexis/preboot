@@ -5,3 +5,7 @@
 *.pid
 *.seed
 
+# TypeScript source files, apart generated type definitions
+*.ts
+!*.d.ts
+

@@ -1,9 +1,9 @@
 {
   "name": "brexis-preboot",
-  "version": "5.0.3",
+  "version": "5.0.7",
   "description": "Record server view events and play back to Angular client view",
   "scripts": {
-    "inline": "node src/build/inline.preboot.builder",
+    "inline": "node dist/src/build/inline.preboot.builder",
     "rmrf": "rm -rf node_modules && rm -rf package-lock.json",
     "build": "rm -rf node_modules && npm i && ./node_modules/.bin/webdriver-manager update && tsc && npm run inline || true",
     "test": "./node_modules/.bin/jasmine JASMINE_CONFIG_PATH=test/utils/jasmine.json || true",
@@ -11,7 +11,8 @@
     "e2e:build": "./node_modules/.bin/webdriver-manager update && tsc && node test/e2e/e2e.server.gen.js && node_modules/.bin/webpack --config test/e2e/webpack.config.js",
     "e2e:test": "./node_modules/.bin/protractor test/e2e/protractor.conf",
     "e2e": "npm run e2e:build && npm run e2e:test || true",
-    "tsc": "tsc"
+    "tsc": "tsc",
+    "ngc": "ngc -p tsconfig.json"
   },
   "author": "Jeff Whelpley",
   "license": "MIT",
@@ -25,6 +26,7 @@
     "@angular/animations": "^4.3.1",
     "@angular/common": "^4.3.1",
     "@angular/compiler": "^4.3.1",
+    "@angular/compiler-cli": "^4.3.1",
     "@angular/core": "^4.3.1",
     "@angular/http": "^4.3.1",
     "@angular/platform-browser": "^4.3.1",

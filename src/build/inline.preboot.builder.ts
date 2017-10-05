@@ -4,7 +4,7 @@ import { getEventRecorderCode } from '../server';
 import fs = require('fs');
 import path = require('path');
 
-const distDir = path.join(__dirname, '../../dist');
+const distDir = path.join(__dirname, '../../');
 const filePath = path.join(distDir, 'preboot.js');
 const fileMinPath = path.join(distDir, 'preboot.min.js');
 const eventRecorderCode = getEventRecorderCode();
